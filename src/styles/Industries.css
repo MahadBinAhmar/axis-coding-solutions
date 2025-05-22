@@ -1,0 +1,52 @@
+.why-choose-us {
+  background-color: #000;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1b858d;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  border: 1px solid #1b858d;
+  box-shadow: 0 10px 20px -4px #1b858d;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #ccc;
+}
