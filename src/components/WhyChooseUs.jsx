@@ -33,35 +33,35 @@ const WhyChooseUs = () => {
       title: 'Web Development',
       description: 'Our team builds responsive and modern websites using the latest technologies. We ensure your site is fast, secure, and optimized for all devices, helping you stand out online.',
       buttonText: 'Get Started',
-      deviceImage: 'https://via.placeholder.com/600x400?text=Slide+2+Devices',
+      deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'SEO Optimization',
       description: 'Boost your search engine rankings with our proven SEO strategies. We focus on keyword research, on-page optimization, and link building to drive organic traffic to your site.',
       buttonText: 'Learn More',
-      deviceImage: 'https://via.placeholder.com/600x400?text=Slide+3+Devices',
+      deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'Social Media Marketing',
       description: 'Engage your audience with our social media marketing services. We create targeted campaigns on platforms like Instagram, Facebook, and Twitter to grow your brand’s presence.',
       buttonText: 'Contact Us',
-      deviceImage: 'https://via.placeholder.com/600x400?text=Slide+4+Devices',
+      deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'Content Creation',
       description: 'High-quality content is key to connecting with your audience. Our team crafts blogs, videos, and infographics that resonate with your customers and drive engagement.',
       buttonText: 'Explore Now',
-      deviceImage: 'https://via.placeholder.com/600x400?text=Slide+5+Devices',
+      deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'PPC Advertising',
       description: 'Maximize your ROI with our PPC advertising services. We design and manage ad campaigns on Google Ads and other platforms to deliver measurable results.',
       buttonText: 'Start Today',
-      deviceImage: 'https://via.placeholder.com/600x400?text=Slide+6+Devices',
+      deviceImage: icon1,
       backgroundImage: bgImage,
     },
   ];
@@ -76,7 +76,6 @@ const WhyChooseUs = () => {
               style={{ backgroundImage: `url(${slide.backgroundImage})` }}
             >
               <div className="slide-content">
-                {/* Apply animation only to text-section */}
                 <div
                   key={`${index}-${currentSlide}`}
                   className="text-section animate-slide-in"
@@ -85,7 +84,6 @@ const WhyChooseUs = () => {
                   <p>{slide.description}</p>
                   <button>{slide.buttonText}</button>
                 </div>
-                {/* Image section remains static */}
                 <div className="image-section">
                   <img src={slide.deviceImage} alt={`Slide ${index + 1} Device Mockup`} />
                 </div>

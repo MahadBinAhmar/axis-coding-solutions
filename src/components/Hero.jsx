@@ -12,7 +12,7 @@ const Hero = () => {
 
       <div className="hero-overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
         <div className="d-flex flex-wrap justify-content-center align-items-center">
-          <h1 className="hero-title m-0">Driving</h1>
+          <h1 className="hero-title m-0 fs-sm-6">Driving</h1>
           <h1 className="hero-title-1 m-0 ms-2">Digital</h1>
         </div>
         <h1 className="hero-title-1">Transformation</h1>

@@ -1,0 +1,156 @@
+.featured-projects {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #1b858d;
+  font-weight: bolder;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.slider {
+  position: relative;
+  margin: 0 -15px; /* Add negative margins to compensate for card padding */
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 0 15px; /* Add padding to create space between cards */
+}
+
+.slide.animate-on-scroll {
+  opacity: 1;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 8px rgba(27, 133, 141);
+}
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Increased gap between images */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px; /* Consistent max width for desktop mockup */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: 1 1 auto; /* Allow flexible sizing while maintaining aspect ratio */
+}
+
+.project-image:nth-child(2) {
+  max-width: 200px; /* Tablet mockup */
+}
+
+.project-image:nth-child(3) {
+  max-width: 100px; /* Phone mockup */
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1b858d;
+  margin-bottom: 5px;
+}
+
+.project-subtitle {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #1b858d;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1b858d;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .project-image:nth-child(2) {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .project-image:nth-child(3) {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .slick-slider {
+    width: 100%;
+  }
+
+  .slider {
+    margin: 0;
+    padding: 0 10px; /* Adjusted padding for mobile */
+  }
+
+  .slide {
+    padding: 0 5px; /* Reduced padding on mobile */
+  }
+}

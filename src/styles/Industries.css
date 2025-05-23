@@ -1,5 +1,5 @@
-.why-choose-us {
-  background-color: #000;
+.industries {
+  background-color: #1a1a1a; /* Dark background matching the image */
   padding: 60px 20px;
   text-align: center;
   color: #fff;
@@ -8,7 +8,7 @@
 .section-title {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #1b858d;
+  color: #1b858d; /* Teal color for the title */
   font-weight: bold;
 }
 
@@ -20,33 +20,103 @@
 }
 
 .feature-card {
-  background: linear-gradient(145deg, #1a1a1a, #111);
-  border-radius: 20px;
-  padding: 30px 25px;
-  width: 260px;
+  background-color: #1a1a1a; /* Dark background for cards */
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 300px; /* Match the approximate width from the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  border: 2px solid #1b858d; /* Teal outline matching the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid transparent;
+  opacity: 0; /* Start hidden for animation */
+  animation: slideInFromTop 0.7s ease forwards;
+  animation-delay: calc(0.1s * var(--delay)); /* Staggered delay */
 }
 
 .feature-card:hover {
-  transform: scale(1.05);
-  border: 1px solid #1b858d;
-  box-shadow: 0 10px 20px -4px #1b858d;
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 15px rgba(27, 133, 141); /* Stronger shadow with teal tint */
+}
+
+.icon {
+  width: 80px; /* Larger icon container */
+  height: 80px;
+  margin: 0 auto 20px; /* Center and add bottom margin */
+  background-color: #1b858d; /* Teal background for the icon */
+  border-radius: 10px; /* Rectangular shape with rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon img {
-  width: 50px;
+  width: 50px; /* Icon size */
   height: 50px;
-  margin-bottom: 20px;
+  object-fit: contain;
 }
 
 .feature-title {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Larger title */
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.feature-subtitle {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 15px;
   color: #fff;
 }
 
 .feature-description {
-  font-size: 16px;
-  color: #ccc;
+  font-size: 14px;
+  color: #b0b0b0; /* Gray text */
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.feature-button {
+  background-color: #1b858d; /* Teal button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-button:hover {
+  background-color: #1b858d; /* Darker teal on hover */
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+    max-width: 320px; /* Limit max width on tablets */
+    margin: 0 auto; /* Center the card */
+  }
+
+  .section-title {
+    font-size: 28px; /* Reduce title size */
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-card {
+    width: 90%; /* Full width with small margins on mobile */
+  }
 }
