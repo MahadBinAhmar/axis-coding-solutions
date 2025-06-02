@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
       <div className="container">
         <a className="navbar-brand logo-hover" href="#">
-          <img src={logo} alt="Logo" height="60"/>
+          <img src={logo} alt="Logo" height="50"/>
         </a>
         <button
           className="navbar-toggler"

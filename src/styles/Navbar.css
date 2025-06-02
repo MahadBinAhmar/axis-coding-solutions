@@ -6,7 +6,7 @@
 
 .logo-hover img {
   transition: transform 0.3s ease;
-  margin-right: 30px;
+  margin-left: 70px;
 }
 
 .logo-hover:hover img {
