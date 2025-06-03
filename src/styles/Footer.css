@@ -1,0 +1,103 @@
+.footer {
+  background-color: #1A3C34; /* Exact teal from image */
+  color: #FFFFFF;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif; /* Replace with exact font if known */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Matches heading style in image */
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Placeholder size, adjust if using images */
+}
+
+.instagram-icon {
+  background-color: #E4405F; /* Exact Instagram color */
+}
+
+.linkedin-icon {
+  background-color: #0077B5; /* Exact LinkedIn color */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.4; /* Slight adjustment for text spacing */
+}
+
+.bottom-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Exact divider style */
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-link {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase; /* Matches link style in image */
+  letter-spacing: 1px; /* Slight enhancement for style */
+}
