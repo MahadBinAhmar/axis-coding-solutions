@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Industries from './components/Industries';
-import FeaturedProjects from './components/FeaturedProjects';
 import Testimonial from './components/Testimonial.jsx';
 import Innovation from './components/Innovation';
 import Footer from './components/Footer';
@@ -18,7 +17,6 @@ function App() {
       <Services />
       <WhyChooseUs />
       <Industries />
-      <FeaturedProjects />
       <Innovation />
       <Testimonial />
       <Footer />
