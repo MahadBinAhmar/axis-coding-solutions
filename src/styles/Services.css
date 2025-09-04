@@ -82,16 +82,41 @@
   transition: all 0.4s ease;
 }
 
-
-
 .tech-card:hover {
-  transform: scale(1.06); /* Zoom out effect */
-  border: 1px solid #1b858d;
-  box-shadow: 0px 8px 18px 1px #1b858d; 
+  transform: scale(1.06);
+  border: 1px solid #e14615;
+  box-shadow: 0px 8px 18px 1px #e14615; 
   cursor: pointer;
 }
 
 .tech-card img {
   width: 24px;
   height: 24px;
+}
+
+/* ✅ Responsive Bootstrap Fix */
+@media (max-width: 992px) {
+  .tech-card {
+    font-size: 14px;
+    padding: 10px 18px;
+    gap: 8px;
+  }
+
+  .tech-card img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-card {
+    font-size: 12px;
+    padding: 8px 14px;
+    gap: 6px;
+  }
+
+  .tech-card img {
+    width: 18px;
+    height: 18px;
+  }
 }

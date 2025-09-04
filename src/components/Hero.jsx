@@ -24,13 +24,13 @@ const Hero = () => {
         </p>
         <div className="hero-buttons mt-3">
           <a
-            href="https://xytech.io/contact-us/"
+            href="#"
             className="btn get-started-btn me-3"
           >
             Get Started
           </a>
           <a
-            href="https://xytech.io/our-projects/"
+            href="#"
             className="btn explore-portfolio-btn"
           >
             Explore Portfolio

@@ -6,68 +6,51 @@ import '../styles/WhyChooseUs.css';
 import bgImage from '../assets/bg.jpg';
 import icon1 from '../assets/icon1.jpg';
 
-
 const WhyChooseUs = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3800,
+    pauseOnHover: false,
+    arrows: false,
     afterChange: (index) => setCurrentSlide(index),
   };
 
   const slides = [
     {
       title: 'Digital Consultancy',
-      description: 'We provide comprehensive digital marketing solutions, including SEO, PPC, social media, and content marketing. Our strategies enhance your online presence and effectively drive business growth, tailored to your specific needs.',
+      description:
+        'We provide comprehensive digital marketing solutions, including SEO, PPC, social media, and content marketing. Our strategies enhance your online presence and effectively drive business growth.',
       buttonText: 'Let’s Strategize',
       deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'Web Development',
-      description: 'Our team builds responsive and modern websites using the latest technologies. We ensure your site is fast, secure, and optimized for all devices, helping you stand out online.',
+      description:
+        'Our team builds responsive and modern websites using the latest technologies. We ensure your site is fast, secure, and optimized for all devices.',
       buttonText: 'Get Started',
       deviceImage: icon1,
       backgroundImage: bgImage,
     },
     {
       title: 'SEO Optimization',
-      description: 'Boost your search engine rankings with our proven SEO strategies. We focus on keyword research, on-page optimization, and link building to drive organic traffic to your site.',
+      description:
+        'Boost your search engine rankings with our proven SEO strategies. We focus on keyword research, on-page optimization, and link building.',
       buttonText: 'Learn More',
-      deviceImage: icon1,
-      backgroundImage: bgImage,
-    },
-    {
-      title: 'Social Media Marketing',
-      description: 'Engage your audience with our social media marketing services. We create targeted campaigns on platforms like Instagram, Facebook, and Twitter to grow your brand’s presence.',
-      buttonText: 'Contact Us',
-      deviceImage: icon1,
-      backgroundImage: bgImage,
-    },
-    {
-      title: 'Content Creation',
-      description: 'High-quality content is key to connecting with your audience. Our team crafts blogs, videos, and infographics that resonate with your customers and drive engagement.',
-      buttonText: 'Explore Now',
-      deviceImage: icon1,
-      backgroundImage: bgImage,
-    },
-    {
-      title: 'PPC Advertising',
-      description: 'Maximize your ROI with our PPC advertising services. We design and manage ad campaigns on Google Ads and other platforms to deliver measurable results.',
-      buttonText: 'Start Today',
       deviceImage: icon1,
       backgroundImage: bgImage,
     },
   ];
 
   return (
-    <div className="slider-container">
+    <div className="slider-container"> {/* ✅ container-fluid hata diya */}
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="slide">
@@ -75,17 +58,23 @@ const WhyChooseUs = () => {
               className="slide-background"
               style={{ backgroundImage: `url(${slide.backgroundImage})` }}
             >
-              <div className="slide-content">
+              <div className="slide-content row mx-0"> {/* ✅ gutter remove */}
+                {/* Text Section */}
                 <div
                   key={`${index}-${currentSlide}`}
-                  className="text-section animate-slide-in"
+                  className="col-lg-6 col-md-12 text-section animate-slide-in"
                 >
                   <h1>{slide.title}</h1>
                   <p>{slide.description}</p>
                   <button>{slide.buttonText}</button>
                 </div>
-                <div className="image-section">
-                  <img src={slide.deviceImage} alt={`Slide ${index + 1} Device Mockup`} />
+
+                {/* Image Section */}
+                <div className="col-lg-6 col-md-12 image-section d-flex justify-content-center">
+                  <img
+                    src={slide.deviceImage}
+                    alt={`Slide ${index + 1} Device Mockup`}
+                  />
                 </div>
               </div>
             </div>

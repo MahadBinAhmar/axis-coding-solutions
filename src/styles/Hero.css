@@ -16,12 +16,13 @@
 }
 
 .hero-overlay {
-  margin-top: 50px;
+  margin-top: 120px; /* Text thoda neeche kar diya */
   position: relative;
   z-index: 1;
   padding: 0 15px;
 }
 
+/* Titles */
 .hero-title,
 .hero-title-1,
 .hero-title-2 {
@@ -29,8 +30,8 @@
   font-weight: bold;
 }
 
-.hero-title-1{
-    color: #1b858d;
+.hero-title-1 {
+  color: #e14615;
 }
 
 .hero-subtitle {
@@ -38,6 +39,7 @@
   margin-top: 16px;
 }
 
+/* Buttons container */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -46,39 +48,57 @@
   margin-top: 20px;
 }
 
+/* Fix: Buttons click par transparent na ho */
 .get-started-btn {
   border-radius: 60px;
-  background-color: #1b858d;
+  background-color: #e14615 !important;
   font-size: 19px;
-  color: white;
+  color: white !important;
   font-weight: 700;
   border: none;
   padding: 12px 30px;
   height: 55px;
   margin: 10px 0 10px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.get-started-btn:hover {
-  background-color: #1b858d;
-  color: white;
+.get-started-btn:hover,
+.get-started-btn:focus,
+.get-started-btn:active {
+  background-color: #e14615 !important;
+  color: white !important;
+  outline: none;
+  box-shadow: none;
 }
 
+/* Second Button */
 .explore-portfolio-btn {
-  border: 2px solid #1b858d;
+  border: 2px solid #e14615 !important;
   border-radius: 60px;
   font-size: 19px;
   font-weight: 700;
   padding: 12px 30px;
   height: 55px;
   margin: 10px 0 10px 0;
-  color: white;
+  color: white !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.explore-portfolio-btn:hover {
-  border: 2px solid #1b858d;
-  color: white;
+.explore-portfolio-btn:hover,
+.explore-portfolio-btn:focus,
+.explore-portfolio-btn:active {
+  border: 2px solid #e14615 !important;
+  background-color: #e14615 !important;
+  color: white !important;
+  outline: none;
+  box-shadow: none;
 }
 
+/* Animation */
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -90,14 +110,42 @@
   }
 }
 
-/* Apply animation to everything inside hero-overlay */
 .hero-overlay > * {
   animation: fadeDown 1s ease-in-out both;
 }
 
-/* Staggering effect: delay every element slightly */
 .hero-overlay > *:nth-child(1) { animation-delay: 0.2s; }
 .hero-overlay > *:nth-child(2) { animation-delay: 0.4s; }
 .hero-overlay > *:nth-child(3) { animation-delay: 0.6s; }
 .hero-overlay > *:nth-child(4) { animation-delay: 0.8s; }
 .hero-overlay > *:nth-child(5) { animation-delay: 1s; }
+
+/* Responsive with Bootstrap */
+@media (max-width: 992px) {
+  .hero-title,
+  .hero-title-1,
+  .hero-title-2 {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title,
+  .hero-title-1,
+  .hero-title-2 {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

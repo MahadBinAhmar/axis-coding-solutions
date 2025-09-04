@@ -1,94 +1,75 @@
 .innovation {
-    background-color: #000;
-    color: #ffffff;
-    padding: 50px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.innovation-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
-}
-
-.innovation-image img {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-.innovation-text {
-    flex: 1;
-    min-width: 400px;
-    max-width: 700px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .innovation-text h1 {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 15px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 15px;
 }
 
 .innovation-text h1 span {
-    color: #1b858d;
+  color: #e14615;
 }
 
 .innovation-text p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #ffffff;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .innovation-text hr {
-    border: none;
-    border-top: 2px solid #1b858d;
-    margin: 20px 0;
-}
-
-.stats {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-    flex: 1;
+  border: none;
+  border-top: 2px solid #e14615;
+  margin: 20px 0;
 }
 
 .stats h2 {
-    font-size: 45px;
-    font-weight: 700;
-    color: #1b858d;
-    margin-bottom: 5px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #e14615;
+  margin-bottom: 5px;
 }
 
 .stats p {
-    font-size: 13px;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .discover-btn {
-    background-color: #1b858d;
-    color: #fff;
-    padding: 12px 35px;
-    font-size: 14px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    display: block;
-    margin: 25px auto 0;
-    width: fit-content;
+  background-color: #e14615;
+  color: #fff;
+  padding: 12px 35px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  margin: 25px auto 0;
+  width: fit-content;
 }
 
 .discover-btn:hover {
-    background-color: #1b858d;
+  background-color: #e14615;
+}
+
+/* ✅ Responsive */
+@media (max-width: 991px) {
+  .innovation-text {
+    text-align: center;
+  }
+
+  .innovation-text h1 {
+    font-size: 28px;
+  }
+
+  .stats h2 {
+    font-size: 30px;
+  }
 }

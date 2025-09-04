@@ -1,49 +1,40 @@
 .slider-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: auto;
   overflow: hidden;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
+  margin: 0;   /* ✅ no unwanted margins */
+  padding: 0;  /* ✅ no padding */
 }
 
 .slide-background {
-  width: 100%;
-  height: 100%;
-  background-size: cover; /* Ensures the entire image is visible */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  position: relative;
+  width: 100vw;   /* ✅ full screen width */
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;      /* ✅ no side gaps */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 60px 0;
 }
 
 .slide-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
 }
 
+/* Text Section */
 .text-section {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding: 30px;
-  width: 45%;
   color: white;
-  opacity: 0; /* Start hidden for animation */
+  opacity: 0;
 }
 
-/* Animation for top-to-bottom slide-in effect, applied only to text-section */
 .animate-slide-in {
-  animation: slideInFromTop 0.7s ease forwards;
-  animation-delay: 0.1s; /* Slight delay to sync with slider transition */
+  animation: slideInFromTop 0.8s ease forwards;
 }
 
 @keyframes slideInFromTop {
@@ -58,69 +49,73 @@
 }
 
 .text-section h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
   line-height: 1.2;
-  font-family: 'Roboto', sans-serif;
 }
 
 .text-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 25px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .text-section button {
-  background-color: #00c4b4;
+  background-color: #e14615;
   color: white;
   border: none;
   padding: 12px 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Roboto', sans-serif;
 }
 
 .text-section button:hover {
-  background-color: #009688;
+  background-color: #e14515d8;
 }
 
-.image-section {
-  width: 35%;
-  /* No animation applied, remains static */
-}
-
+/* Image Section */
 .image-section img {
-  width: 100%;
+  max-width: 70%;
   height: auto;
   object-fit: contain;
-  transform: scale(0.8); /* Start with a smaller size (zoomed in) */
-  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  transform: scale(0.90);
+  transition: transform 0.3s ease;
 }
 
 .image-section img:hover {
-  transform: scale(1); /* Zoom out to original size (or larger) on hover */
+  transform: scale(1);
 }
 
-.slick-dots {
-  bottom: 15px;
+/* Responsive */
+@media (max-width: 992px) {
+  .text-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .text-section h1 {
+    font-size: 2rem;
+  }
 }
 
-.slick-dots li {
-  margin: 0 5px;
-}
-
-.slick-dots li button:before {
-  font-size: 12px;
-  color: white;
-  opacity: 0.5;
-}
-
-.slick-dots li.slick-active button:before {
-  color: white;
-  opacity: 1;
+@media (max-width: 576px) {
+  .slide-background {
+    padding: 40px 15px;
+  }
+  .text-section {
+    padding: 20px;
+  }
+  .text-section h1 {
+    font-size: 1.6rem;
+  }
+  .text-section p {
+    font-size: 0.9rem;
+  }
+  .text-section button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
