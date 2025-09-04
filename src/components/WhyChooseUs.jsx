@@ -3,8 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/WhyChooseUs.css';
-import bgImage from '../assets/bg.jpg';
-import icon1 from '../assets/icon1.jpg';
+import bgImage from '../assets/WhyChooseUsbg.webp';
+import icon1 from '../assets/digic.webp';
+import icon2 from '../assets/webdevbg.webp';
+import icon3 from '../assets/seobg.jpg';
+
 
 const WhyChooseUs = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,7 +39,7 @@ const WhyChooseUs = () => {
       description:
         'Our team builds responsive and modern websites using the latest technologies. We ensure your site is fast, secure, and optimized for all devices.',
       buttonText: 'Get Started',
-      deviceImage: icon1,
+      deviceImage: icon2,
       backgroundImage: bgImage,
     },
     {
@@ -44,7 +47,7 @@ const WhyChooseUs = () => {
       description:
         'Boost your search engine rankings with our proven SEO strategies. We focus on keyword research, on-page optimization, and link building.',
       buttonText: 'Learn More',
-      deviceImage: icon1,
+      deviceImage: icon3,
       backgroundImage: bgImage,
     },
   ];
