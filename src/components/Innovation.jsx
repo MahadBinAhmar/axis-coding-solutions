@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Innovation.css";
-import teamImage from "../assets/innovation.png";
+import teamImage from "../assets/innovation.webp";
 
 const Innovation = () => {
   return (

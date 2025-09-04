@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Testimonial.css";
 
 // 👇 Apni images import karo
-import user1 from "../assets/st.jpeg";
+import user1 from "../assets/st.webp";
 import user2 from "../assets/om.webp";
-import user3 from "../assets/jd.jpeg";
-import user4 from "../assets/ec.jpg";
-import user5 from "../assets/mc.jpeg";
+import user3 from "../assets/jd.webp";
+import user4 from "../assets/ec.webp";
+import user5 from "../assets/mc.webp";
 
 const Testimonial = () => {
   const settings = {

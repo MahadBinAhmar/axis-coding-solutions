@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles/Services.css';
-import icon1 from '../assets/nodejs.png';
-import icon2 from '../assets/python.png';
-import icon3 from '../assets/ruby.png';
-import icon4 from '../assets/ebay.png';
-import icon5 from '../assets/shopify.png';
-import icon6 from '../assets/react.png';
-import icon7 from '../assets/swift.png';
-import icon8 from '../assets/rust.png';
-import icon9 from '../assets/flutter.png';
-import icon10 from '../assets/dart.png';
-import icon11 from '../assets/typescript.png';
-import icon12 from '../assets/angularjs.png';
+import icon1 from '../assets/nodejs.webp';
+import icon2 from '../assets/python.webp';
+import icon3 from '../assets/ruby.webp';
+import icon4 from '../assets/ebay.webp';
+import icon5 from '../assets/shopify.webp';
+import icon6 from '../assets/react.webp';
+import icon7 from '../assets/swift.webp';
+import icon8 from '../assets/rust.webp';
+import icon9 from '../assets/flutter.webp';
+import icon10 from '../assets/dart.webp';
+import icon11 from '../assets/typescript.webp';
+import icon12 from '../assets/angularjs.webp';
 
 const techStackRow1 = [
   { name: 'Node.js', icon: icon1 },

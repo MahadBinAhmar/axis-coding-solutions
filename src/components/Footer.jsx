@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css';
-import instagramLogo from "../assets/insta.png"; 
-import linkedinLogo from "../assets/linkedin.png"; 
+import instagramLogo from "../assets/insta.webp"; 
+import linkedinLogo from "../assets/linkedin.webp"; 
 
 const Footer = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/Industries.css';
-import icon1 from '../assets/webdev.png';
-import icon2 from '../assets/flutter.png';
-import icon3 from '../assets/dart.png';
-import icon4 from '../assets/support.png';
-import icon5 from '../assets/fastd.png';
-import icon6 from '../assets/proven.png';
+import icon1 from '../assets/webdev.webp';
+import icon2 from '../assets/flutter.webp';
+import icon3 from '../assets/dart.webp';
+import icon4 from '../assets/support.webp';
+import icon5 from '../assets/fastd.webp';
+import icon6 from '../assets/proven.webp';
 
 const Industries = () => {
   const features = [
