@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/Footer.css';
-import instagramLogo from "../assets/insta.webp"; 
-import linkedinLogo from "../assets/linkedin.webp"; 
+import '../../styles/home/Footer.css';
+import instagramLogo from "../../assets/home/insta.webp"; 
+import linkedinLogo from "../../assets/home/linkedin.webp"; 
 
 const Footer = () => {
   return (
@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="row">
           {/* First Column: Axis Coding Solution */}
           <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <h3 className="heading">Axis Coding Solution</h3>
+            <h3 className="heading">Cyber Core Solutions</h3>
             <p className="text">
-              Axis Coding Solution where empower your business with cutting-edge web
+              Cyber Core Solutions where empower your business with cutting-edge web
               solutions, innovative designs, and seamless user experiences crafted by
               experts.
             </p>
@@ -69,7 +69,7 @@ const Footer = () => {
         <div className="row w-100 align-items-center">
           <div className="col-md-6 col-sm-12 text-center text-md-start mb-2 mb-md-0">
             <div className="copyright">
-              © 2018-25 Axis Coding Solution, All rights reserved.
+              © 2018-25 Cyber Core Solutions, All rights reserved.
             </div>
           </div>
           <div className="col-md-6 col-sm-12 text-center text-md-end">

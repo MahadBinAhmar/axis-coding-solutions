@@ -16,13 +16,12 @@
 }
 
 .hero-overlay {
-  margin-top: 120px; /* Text thoda neeche kar diya */
+  margin-top: 120px;
   position: relative;
   z-index: 1;
   padding: 0 15px;
 }
 
-/* Titles */
 .hero-title,
 .hero-title-1,
 .hero-title-2 {
@@ -31,7 +30,9 @@
 }
 
 .hero-title-1 {
-  color: #e14615;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-subtitle {
@@ -39,7 +40,6 @@
   margin-top: 16px;
 }
 
-/* Buttons container */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -48,10 +48,9 @@
   margin-top: 20px;
 }
 
-/* Fix: Buttons click par transparent na ho */
 .get-started-btn {
   border-radius: 60px;
-  background-color: #e14615 !important;
+  background-color: #FF7E30 !important;
   font-size: 19px;
   color: white !important;
   font-weight: 700;
@@ -67,15 +66,15 @@
 .get-started-btn:hover,
 .get-started-btn:focus,
 .get-started-btn:active {
-  background-color: #e14615 !important;
-  color: white !important;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30) !important;
+  background-clip: text;
+  color: transparent;
   outline: none;
   box-shadow: none;
 }
 
-/* Second Button */
 .explore-portfolio-btn {
-  border: 2px solid #e14615 !important;
+  border: 2px solid #FF7E30 !important;
   border-radius: 60px;
   font-size: 19px;
   font-weight: 700;
@@ -91,14 +90,14 @@
 .explore-portfolio-btn:hover,
 .explore-portfolio-btn:focus,
 .explore-portfolio-btn:active {
-  border: 2px solid #e14615 !important;
-  background-color: #e14615 !important;
-  color: white !important;
+  border: 2px solid #FF7E30 !important;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30) !important;
+  background-clip: text;
+  color: transparent;
   outline: none;
   box-shadow: none;
 }
 
-/* Animation */
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -120,7 +119,6 @@
 .hero-overlay > *:nth-child(4) { animation-delay: 0.8s; }
 .hero-overlay > *:nth-child(5) { animation-delay: 1s; }
 
-/* Responsive with Bootstrap */
 @media (max-width: 992px) {
   .hero-title,
   .hero-title-1,

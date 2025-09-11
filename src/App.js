@@ -1,11 +1,11 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
-import Industries from './components/Industries';
-import Testimonial from './components/Testimonial.jsx';
-import Innovation from './components/Innovation';
-import Footer from './components/Footer';
+import Navbar from './components/home/Navbar';
+import Hero from './components/home/Hero';
+import Services from './components/home/Services';
+import WhyChooseUs from './components/home/WhyChooseUs';
+import Industries from './components/home/Industries';
+import Testimonial from './components/home/Testimonial.jsx';
+import Innovation from './components/home/Innovation';
+import Footer from './components/home/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

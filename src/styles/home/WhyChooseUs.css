@@ -3,6 +3,12 @@
   height: auto;
 }
 
+.why-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slide-background {
   width: 100%;
   min-height: 500px;
@@ -19,9 +25,14 @@
   border-radius: 15px;
   padding: 40px;
   color: white;
+  width: 100%;
   max-width: 700px;
   text-align: center;
   animation: fadeInUp 0.8s ease forwards;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @keyframes fadeInUp {
@@ -46,10 +57,11 @@
   margin-bottom: 25px;
   line-height: 1.7;
   color: #e0e0e0;
+  flex-grow: 1;
 }
 
 .text-section button {
-  background-color: #e14615;
+  background: #e16a15;
   color: #fff;
   border: none;
   padding: 12px 30px;
@@ -57,20 +69,20 @@
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
+  align-self: center;
 }
 
 .text-section button:hover {
-  background-color: #ff4c1f;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
   transform: translateY(-2px);
 }
 
-/* Swiper pagination (dots) */
 .swiper-pagination-bullet {
   background: #fff !important;
   opacity: 0.6;
 }
 
 .swiper-pagination-bullet-active {
-  background: #e14615 !important;
+  background: #e16a15 !important;
   opacity: 1;
 }

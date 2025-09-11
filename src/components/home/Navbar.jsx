@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.webp';
-import '../styles/Navbar.css';
+import logo from '../../assets/home/logo.webp';
+import '../../styles/home/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 

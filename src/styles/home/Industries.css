@@ -1,5 +1,5 @@
 .industries {
-  background-color: #1a1a1a; /* Dark background matching the image */
+  background-color: #242424;
   padding: 60px 20px;
   text-align: center;
   color: #fff;
@@ -13,21 +13,21 @@
 }
 
 .feature-card {
-  background-color: #1a1a1a; /* Dark background for cards */
+  background-color: #242424;
   border-radius: 15px;
   padding: 30px 20px;
-  width: 300px; /* Match the approximate width from the image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  border: 2px solid #e14615; /* Teal outline matching the image */
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #FF7E30;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* Start hidden for animation */
+  opacity: 0;
   animation: slideInFromTop 0.7s ease forwards;
-  animation-delay: calc(0.1s * var(--delay)); /* Staggered delay */
+  animation-delay: calc(0.1s * var(--delay));
 }
 
 .feature-card:hover {
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 6px 15px rgba(225, 70, 21); /* Stronger shadow with teal tint */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 126, 48);
 }
 
 .icon {
@@ -35,18 +35,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none !important;  /* 🔥 force remove bg */
-  border-radius: 0 !important; /* 🔥 remove rounded box */
+  background: none !important;
+  border-radius: 0 !important;
 }
 
 .icon img {
-  width: 40px !important;   /* chhota size */
+  width: 40px !important;
   height: 40px !important;
   object-fit: contain;
 }
 
 .feature-title {
-  font-size: 24px; /* Larger title */
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
   color: #fff;
@@ -61,25 +61,25 @@
 
 .feature-description {
   font-size: 14px;
-  color: #b0b0b0; /* Gray text */
+  color: #b0b0b0;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
 .feature-button {
-  background-color: #e14615; /* Teal button */
+  background: #e16a15;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 25px; /* Rounded button */
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .feature-button:hover {
-  background-color: #e14615; /* Darker teal on hover */
+  background: linear-gradient(90deg, #FFD95A, #FF7E30) !important;
 }
 
 @keyframes slideInFromTop {
@@ -93,24 +93,25 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .feature-card {
     width: 100%;
-    max-width: 320px; /* Limit max width on tablets */
-    margin: 0 auto; /* Center the card */
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .section-title {
-    font-size: 28px; /* Reduce title size */
+    font-size: 28px;
   }
 }
 
 @media (max-width: 576px) {
   .feature-card {
-    width: 90%; /* Full width with small margins on mobile */
+    width: 90%;
   }
-}.industries {
+}
+
+.industries {
   background-color: #1a1a1a;
   padding: 60px 20px;
   text-align: center;
@@ -121,9 +122,9 @@
   background-color: #1a1a1a;
   border-radius: 15px;
   padding: 30px 20px;
-  height: 100%; /* 🔥 make equal height in Bootstrap grid */
+  height: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid #e14615;
+  border: 2px solid #e16a15;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   animation: slideInFromTop 0.7s ease forwards;
@@ -132,14 +133,14 @@
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(225, 62, 21);
+  box-shadow: 0 6px 15px rgba(225, 106, 21);
 }
 
 .icon {
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background-color: #e14615;
+  background-color: #e16a15;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -174,7 +175,7 @@
 }
 
 .feature-button {
-  background-color: #e14615;
+  background-color: #e16a15;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -186,7 +187,7 @@
 }
 
 .feature-button:hover {
-  background-color: #e14615;
+  background-color: #e16a15;
 }
 
 @keyframes slideInFromTop {
@@ -199,5 +200,3 @@
     opacity: 1;
   }
 }
-
-/* ✅ Responsive handled by Bootstrap grid (col-lg-4 col-md-6 col-sm-12) */

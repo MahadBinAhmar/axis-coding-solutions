@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Hero.css";
-import bg from "../assets/bg.mp4";
+import "../../styles/home/Hero.css";
+import bg from "../../assets/home/bg.mp4";
 
 const Hero = () => {
   return (

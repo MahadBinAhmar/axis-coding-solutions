@@ -2,14 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/Testimonial.css";
-
-// 👇 Apni images import karo
-import user1 from "../assets/st.webp";
-import user2 from "../assets/om.webp";
-import user3 from "../assets/jd.webp";
-import user4 from "../assets/ec.webp";
-import user5 from "../assets/mc.webp";
+import "../../styles/home/Testimonial.css";
+import user1 from "../../assets/home/st.webp";
+import user2 from "../../assets/home/om.webp";
+import user3 from "../../assets/home/jd.webp";
+import user4 from "../../assets/home/ec.webp";
+import user5 from "../../assets/home/mc.webp";
 
 const Testimonial = () => {
   const settings = {
@@ -44,28 +42,28 @@ const Testimonial = () => {
       name: "Sarah Thompson",
       title: "Marketing Director at GreenLeaf",
       feedback:
-        "Axis Coding Solutions delivered exactly what we were looking for – a beautiful, mobile-friendly website that attracts more customers to our online store.",
+        "Cyber Core Solutions delivered exactly what we were looking for – a beautiful, mobile-friendly website that attracts more customers to our online store.",
       image: user1,
     },
     {
       name: "Olivia Martinez",
       title: "Director of Communications",
       feedback:
-        "Axis Coding Solutions transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand.",
+        "Cyber Core Solutions transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand.",
       image: user2,
     },
     {
       name: "John Down",
       title: "Manager of TechSavvy Innovations",
       feedback:
-        "Axis Coding Solutions team did an incredible job redesigning our website. We’ve seen a 40% increase in user engagement since the launch.",
+        "Cyber Core Solutions team did an incredible job redesigning our website. We’ve seen a 40% increase in user engagement since the launch.",
       image: user3,
     },
     {
       name: "Emily Carter",
       title: "CEO at BlueWave Tech",
       feedback:
-        "Working with Axis Coding Solutions was a game-changer for us. The results speak for themselves – our user base has grown by 35%.",
+        "Working with Cyber Core Solutions was a game-changer for us. The results speak for themselves – our user base has grown by 35%.",
       image: user4,
     },
     {

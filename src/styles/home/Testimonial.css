@@ -14,7 +14,9 @@
 }
 
 .testimonial h1 span {
-  color: #e14615;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  background-clip: text;
+  color: transparent;
 }
 
 /* Proper container fit */
@@ -54,7 +56,6 @@
   gap: 15px;
 }
 
-/* ✅ Circle image */
 .author-image {
   width: 50px;
   height: 50px;
@@ -82,21 +83,19 @@
   color: #b3b3b3;
 }
 
-/* Slider dots */
 .slick-dots {
   margin-top: 25px;
 }
 
 .slick-dots li button:before {
-  color: #e14615;
+  color: #fab411;
   font-size: 12px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #e14615;
+  color: #fab411;
 }
 
-/* Hide arrows */
 .slick-prev, .slick-next {
   display: none !important;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #e14615;
+  background: #242424 !important;
   color: #FFFFFF;
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
@@ -33,7 +33,7 @@
   height: 35px;
   object-fit: contain;
   border-radius: 50%;
-  background: #fff; /* white background for better visibility */
+  background: #fff; /* icons ke liye white bg */
   padding: 5px;
   transition: transform 0.3s ease;
 }

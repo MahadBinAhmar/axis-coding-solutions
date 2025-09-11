@@ -4,8 +4,8 @@ import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import "../styles/WhyChooseUs.css";
-import bgImage from "../assets/WhyChooseUsbg.webp";
+import "../../styles/home/WhyChooseUs.css";
+import bgImage from "../../assets/home/WhyChooseUsbg.webp";
 
 const slides = [
   {

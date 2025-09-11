@@ -13,7 +13,9 @@
 }
 
 .innovation-text h1 span {
-  color: #e14615;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  background-clip: text;
+  color: transparent;
 }
 
 .innovation-text p {
@@ -25,14 +27,16 @@
 
 .innovation-text hr {
   border: none;
-  border-top: 2px solid #e14615;
+  border-top: 2px solid #fab411;
   margin: 20px 0;
 }
 
 .stats h2 {
   font-size: 45px;
   font-weight: 700;
-  color: #e14615;
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 5px;
 }
 
@@ -43,7 +47,7 @@
 }
 
 .discover-btn {
-  background-color: #e14615;
+  background-color: #e16a15;
   color: #fff;
   padding: 12px 35px;
   font-size: 14px;
@@ -56,7 +60,7 @@
 }
 
 .discover-btn:hover {
-  background-color: #e14615;
+ background: linear-gradient(90deg, #FFD95A, #FF7E30);
 }
 
 /* ✅ Responsive */

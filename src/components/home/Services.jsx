@@ -1,17 +1,17 @@
 import React from 'react';
-import '../styles/Services.css';
-import icon1 from '../assets/nodejs.webp';
-import icon2 from '../assets/python.webp';
-import icon3 from '../assets/ruby.webp';
-import icon4 from '../assets/ebay.webp';
-import icon5 from '../assets/shopify.webp';
-import icon6 from '../assets/react.webp';
-import icon7 from '../assets/swift.webp';
-import icon8 from '../assets/rust.webp';
-import icon9 from '../assets/flutter.webp';
-import icon10 from '../assets/dart.webp';
-import icon11 from '../assets/typescript.webp';
-import icon12 from '../assets/angularjs.webp';
+import '../../styles/home/Services.css';
+import icon1 from '../../assets/home/nodejs.webp';
+import icon2 from '../../assets/home/python.webp';
+import icon3 from '../../assets/home/ruby.webp';
+import icon4 from '../../assets/home/ebay.webp';
+import icon5 from '../../assets/home/shopify.webp';
+import icon6 from '../../assets/home/react.webp';
+import icon7 from '../../assets/home/swift.webp';
+import icon8 from '../../assets/home/rust.webp';
+import icon9 from '../../assets/home/flutter.webp';
+import icon10 from '../../assets/home/dart.webp';
+import icon11 from '../../assets/home/typescript.webp';
+import icon12 from '../../assets/home/angularjs.webp';
 
 const techStackRow1 = [
   { name: 'Node.js', icon: icon1 },
