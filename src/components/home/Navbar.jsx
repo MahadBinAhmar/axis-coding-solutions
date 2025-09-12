@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import logo from '../../assets/home/logo.webp';
-import '../../styles/home/Navbar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../aboutus/Navbar';
-import { Link } from 'react-router-dom';
-
+import React, { useState } from "react";
+import logo from "../../assets/home/logo.webp";
+import "../../styles/home/Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "../aboutus/Navbar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,31 +24,64 @@ const Navbar = () => {
           </a>
 
           {/* Hamburger Icon */}
-          <button className="navbar-toggler border-0" type="button" onClick={toggleMenu}>
+          <button
+            className="navbar-toggler border-0"
+            type="button"
+            onClick={toggleMenu}
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
 
           {/* Normal Links (Desktop View) */}
-          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
             <ul className="navbar-nav align-items-center mx-auto">
-              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-<li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
+              </li>
 
-              <li className="nav-item"><a className="nav-link active" href="#">Services</a></li>
-              <li className="nav-item"><a className="nav-link active" href="#">Our Projects</a></li>
-              <li className="nav-item"><a className="nav-link active" href="#">Blogs</a></li>
-              <li className="nav-item"><a className="nav-link active" href="#">Contact Us</a></li>
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  Our Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  Blogs
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  Contact Us
+                </a>
+              </li>
             </ul>
 
             <div className="ms-auto pe-2">
-              <a className="btn get-started-btn" href="#">Get Started</a>
+              <a className="btn get-started-btn" href="#">
+                Get Started
+              </a>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Fullscreen Overlay for Mobile */}
-      <div className={`overlay ${menuOpen ? 'overlay-open' : ''}`}>
+      <div className={`overlay ${menuOpen ? "overlay-open" : ""}`}>
         <button className="btn-close-overlay" onClick={toggleMenu}>
           &times;
         </button>
@@ -67,8 +99,12 @@ const Navbar = () => {
 
           {/* Right Side - SAME LINKS */}
           <div className="overlay-right">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <Link className="nav-link" to="/">
+                  Home
+                </Link>
+            <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
             <a href="#">Services</a>
             <a href="#">Our Projects</a>
             <a href="#">Blogs</a>
