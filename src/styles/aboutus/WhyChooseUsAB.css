@@ -1,0 +1,65 @@
+.wcus-slide {
+  width: 100%;
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wcus-content {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  padding: 40px;
+  color: #fff;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.wcus-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.wcus-content h1 .wcus-highlight {
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wcus-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.wcus-btn {
+  background: #FF7E30;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wcus-btn:hover {
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

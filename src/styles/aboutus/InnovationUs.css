@@ -1,44 +1,82 @@
-.innovation {
+.innovation-us {
   background-color: #000;
   color: #ffffff;
   padding: 50px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.innovation-text h1 {
+.innovation-us-text h1 {
   font-size: 38px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 15px;
 }
 
-.innovation-image img {
+.innovation-us-image img {
   max-width: 95%;   
   height: auto;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;   
 }
 
-.innovation-text h1 span {
+.innovation-us-image {
+  position: relative;
+}
+
+.innovation-us-box {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: rgb(5, 7, 7, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 55%;
+}
+
+.innovation-us-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.innovation-us-box li {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+  border-bottom: 1px solid #FF7E30;
+  padding-bottom: 6px;
+}
+
+.innovation-us-box li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #FF7E30;
+  font-weight: bold;
+}
+
+.innovation-us-text h1 span {
   background: linear-gradient(90deg, #FFD95A, #FF7E30);
   background-clip: text;
   color: transparent;
 }
 
-.innovation-text p {
+.innovation-us-text p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
-.innovation-text hr {
+.innovation-us-text hr {
   border: none;
   border-top: 2px solid #fab411;
   margin: 20px 0;
 }
 
-.stats h2 {
+.innovation-us-stats h2 {
   font-size: 45px;
   font-weight: 700;
   background: linear-gradient(90deg, #FFD95A, #FF7E30);
@@ -47,13 +85,13 @@
   margin-bottom: 5px;
 }
 
-.stats p {
+.innovation-us-stats p {
   font-size: 13px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.discover-btn {
+.innovation-us-btn {
   background-color: #e16a15;
   color: #fff;
   padding: 12px 35px;
@@ -66,21 +104,21 @@
   width: fit-content;
 }
 
-.discover-btn:hover {
- background: linear-gradient(90deg, #FFD95A, #FF7E30);
+.innovation-us-btn:hover {
+  background: linear-gradient(90deg, #FFD95A, #FF7E30);
 }
 
 /* ✅ Responsive */
 @media (max-width: 991px) {
-  .innovation-text {
+  .innovation-us-text {
     text-align: center;
   }
 
-  .innovation-text h1 {
+  .innovation-us-text h1 {
     font-size: 28px;
   }
 
-  .stats h2 {
+  .innovation-us-stats h2 {
     font-size: 30px;
   }
 }

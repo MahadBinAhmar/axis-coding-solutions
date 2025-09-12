@@ -23,16 +23,10 @@ const Hero = () => {
           designs, and seamless user experiences crafted by experts.
         </p>
         <div className="hero-buttons mt-3">
-          <a
-            href="#"
-            className="btn get-started-btn me-3"
-          >
+          <a href="#" className="btn get-started-btn me-3">
             Get Started
           </a>
-          <a
-            href="#"
-            className="btn explore-portfolio-btn"
-          >
+          <a href="#" className="btn explore-portfolio-btn">
             Explore Portfolio
           </a>
         </div>

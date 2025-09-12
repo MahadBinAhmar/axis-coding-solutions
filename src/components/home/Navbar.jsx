@@ -3,6 +3,9 @@ import logo from '../../assets/home/logo.webp';
 import '../../styles/home/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../aboutus/Navbar';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,8 +32,9 @@ const Navbar = () => {
           {/* Normal Links (Desktop View) */}
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav align-items-center mx-auto">
-              <li className="nav-item"><a className="nav-link active" href="#">Home</a></li>
-              <li className="nav-item"><a className="nav-link active" href="#">About Us</a></li>
+              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+<li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
+
               <li className="nav-item"><a className="nav-link active" href="#">Services</a></li>
               <li className="nav-item"><a className="nav-link active" href="#">Our Projects</a></li>
               <li className="nav-item"><a className="nav-link active" href="#">Blogs</a></li>
