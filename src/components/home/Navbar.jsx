@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import logo from "../../assets/home/logo.webp";
+import logo from "../../assets/home/NavLog.webp";
 import "../../styles/home/Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "../aboutus/Navbar";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -17,11 +16,11 @@ const Navbar = () => {
     <>
       {/* Blur Transparent Navbar */}
       <nav className="navbar navbar-expand-lg glass-navbar fixed-top">
-        <div className="container">
-          {/* Logo */}
-          <a className="navbar-brand logo-hover" href="#">
+        <div className="container d-flex align-items-center justify-content-between">
+          {/* Logo on left */}
+          <Link className="navbar-brand logo-hover" to="/">
             <img src={logo} alt="Logo" height="70" />
-          </a>
+          </Link>
 
           {/* Hamburger Icon */}
           <button
@@ -32,12 +31,14 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Normal Links (Desktop View) */}
+          {/* nav-links + button on right */}
           <div
-            className="collapse navbar-collapse justify-content-center"
+            className={`collapse navbar-collapse ${
+              menuOpen ? "show" : ""
+            } justify-content-end`}
             id="navbarNav"
           >
-            <ul className="navbar-nav align-items-center mx-auto">
+            <ul className="navbar-nav align-items-center me-2">
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home
@@ -48,7 +49,6 @@ const Navbar = () => {
                   About Us
                 </Link>
               </li>
-
               <li className="nav-item">
                 <a className="nav-link active" href="#">
                   Services
@@ -60,22 +60,20 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/blog">
                   Blogs
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/contact">
                   Contact Us
                 </a>
               </li>
             </ul>
 
-            <div className="ms-auto pe-2">
-              <a className="btn get-started-btn" href="#">
-                Get Started
-              </a>
-            </div>
+            <a className="btn get-started-btn" href="#">
+              Get Started
+            </a>
           </div>
         </div>
       </nav>
@@ -97,18 +95,26 @@ const Navbar = () => {
             <a href="mailto:hello@designdirection.com">cycsol@gmail.com</a>
           </div>
 
-          {/* Right Side - SAME LINKS */}
+          {/* Right Side - Same Links */}
           <div className="overlay-right">
             <Link className="nav-link" to="/">
-                  Home
-                </Link>
+              Home
+            </Link>
             <Link className="nav-link" to="/about">
-                  About Us
-                </Link>
-            <a href="#">Services</a>
-            <a href="#">Our Projects</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact Us</a>
+              About Us
+            </Link>
+            <Link className="nav-link" to="/service">
+              Services
+            </Link>
+            <Link className="nav-link" to="/ourproject">
+              Our Projects
+            </Link>
+            <Link className="nav-link" to="/blog">
+              Blogs
+            </Link>{" "}
+            <Link className="nav-link" to="/contact">
+              Contact Us
+            </Link>{" "}
           </div>
         </div>
       </div>

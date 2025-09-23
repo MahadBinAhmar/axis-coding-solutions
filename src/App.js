@@ -1,56 +1,115 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/home/Navbar';
-import Hero from './components/home/Hero';
-import Services from './components/home/Services';
-import WhyChooseUs from './components/home/WhyChooseUs';
-import Industries from './components/home/Industries';
-import Testimonial from './components/home/Testimonial';
-import Innovation from './components/home/Innovation';
-import Footer from './components/home/Footer';
-import HeroUs from './components/aboutus/HeroUs';
-import InnovationUs from './components/aboutus/InnovationUs';
-import IndustriesUs from './components/aboutus/IndustriesUs';
-import ScrollingImagesUs from './components/aboutus/ScrollingImages';
-import WhyChooseUsAB from './components/aboutus/WhyChooseUsAB';
-
-
+import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Preloader from "./components/home/Preloader";
+import Navbar from "./components/home/Navbar";
+import Hero from "./components/home/Hero";
+import Services from "./components/home/Services";
+import WhyChooseUs from "./components/home/WhyChooseUs";
+import Industries from "./components/home/Industries";
+import Testimonial from "./components/home/Testimonial";
+import Innovation from "./components/home/Innovation";
+import Footer from "./components/home/Footer";
+import HeroUs from "./components/aboutus/HeroUs";
+import InnovationUs from "./components/aboutus/InnovationUs";
+import IndustriesUs from "./components/aboutus/IndustriesUs";
+import ScrollingImagesUs from "./components/aboutus/ScrollingImages";
+import WhyChooseUsAB from "./components/aboutus/WhyChooseUsAB";
+import Contact from "./components/contactus/Contact";
+import MapSection from "./components/contactus/MapSection";
+import ContctUs from "./components/contactus/ContactUs";
+import BlogUs from "./components/blogs/BlogUs";
+import Cards from "./components/blogs/Cards";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />   {/* sab pages pe same navbar chahiye */}
-      <Routes>
-        {/* Home Page Route */}
-        <Route 
-          path="/" 
-          element={
-            <>
-              <Hero />
-              <Services />
-              <WhyChooseUs />
-              <Industries />
-              <Innovation />
-              <Testimonial />
-            </>
-          } 
-        />
+  const [loading, setLoading] = useState(true);
 
-        {/* About Us Page Route */}
-         <Route
-          path="/about"
-          element={
+  useEffect(() => {
+    // 5 seconds ke liye preloader
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <Router>
+          <Navbar />
+          <Routes>
+            {/* Home Page Route */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Services />
+                  <WhyChooseUs />
+                  <Industries />
+                  <Innovation />
+                  <Testimonial />
+                </>
+              }
+            />
+
+            {/* About Us Page Route */}
+            <Route
+              path="/about"
+              element={
+                <>
+                  <HeroUs />
+                  <InnovationUs />
+                  <IndustriesUs />
+                  <ScrollingImagesUs />
+                  <WhyChooseUsAB />
+                </>
+              }
+            />
+
+            <Route path="/contact" 
+            element={
             <>
-              <HeroUs />
-              <InnovationUs/>
-              <IndustriesUs/>
-              <ScrollingImagesUs/>
-              <WhyChooseUsAB/>
+               <ContctUs />
+               <Contact/>
+               <MapSection/>
             </>
-          }
-        />
-      </Routes>
-              <Footer />
-    </Router>
+           } 
+          />
+
+          <Route path="/blog" 
+            element={
+            <>
+               <BlogUs />
+               <Cards/>
+          
+            </>
+           } 
+          />
+
+          <Route path="/ourproject" 
+            element={
+            <>
+            
+            </>
+           } 
+          />
+
+          <Route path="/service" 
+            element={
+            <>
+            
+            </>
+           } 
+          />
+
+          </Routes>
+          <Footer />
+        </Router>
+      )}
+    </>
   );
 }
 
