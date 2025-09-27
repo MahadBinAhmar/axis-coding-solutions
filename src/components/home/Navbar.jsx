@@ -50,28 +50,28 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link" to="/service">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link" to="/ourproject">
                   Our Projects
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/blog">
-                  Blogs
-                </a>
+                <Link className="nav-link" to="/blog">
+                  Blog
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
 
-            <a className="btn get-started-btn" href="#">
+            <a className="btn get-started-btn" href="/contact">
               Get Started
             </a>
           </div>

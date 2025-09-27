@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/home/Hero.css";
 import bg from "../../assets/home/bg.mp4";
 
@@ -23,10 +24,10 @@ const Hero = () => {
           designs, and seamless user experiences crafted by experts.
         </p>
         <div className="hero-buttons mt-3">
-          <a href="#" className="btn get-started-btn me-3">
+          <a href="/contact" className="btn get-started-btn me-3">
             Get Started
           </a>
-          <a href="#" className="btn explore-portfolio-btn">
+          <a href="/about" className="btn explore-portfolio-btn">
             Explore Portfolio
           </a>
         </div>

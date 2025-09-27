@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "../../styles/contactus/Contact.css";
 
-// images import
 import usaImg from "../../assets/contactus/location.webp";
 import uaeImg from "../../assets/contactus/location.webp";
 import bahrainImg from "../../assets/contactus/location.webp";

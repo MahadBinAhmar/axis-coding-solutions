@@ -21,7 +21,7 @@ const WhyChooseUsAB = () => {
                 Through personalized solutions and data-driven insights, we help
                 you to accelerate growth and expand your market reach.
               </p>
-              <button className="wcus-btn">Start Your Journey</button>
+              <a href="/contact" className="wcus-btn">Start Your Journey</a>
             </div>
           </div>
         </div>

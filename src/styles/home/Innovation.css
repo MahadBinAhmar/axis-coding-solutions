@@ -41,7 +41,7 @@
 .stats h2 {
   font-size: 45px;
   font-weight: 700;
-  background: linear-gradient(90deg, #FFD95A, #FF7E30);
+  background: linear-gradient(90deg, #fff, #fff);
   background-clip: text;
   color: transparent;
   margin-bottom: 5px;
@@ -54,6 +54,7 @@
 }
 
 .discover-btn {
+  text-decoration: none;
   background-color: #e16a15;
   color: #fff;
   padding: 12px 35px;

@@ -1,61 +1,101 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-import "../../styles/home/WhyChooseUs.css";
-import bgImage from "../../assets/home/WhyChooseUsbg.webp";
 
-const slides = [
-  {
-    title: "Digital Consultancy",
-    description:
-      "We provide comprehensive digital marketing solutions, including SEO, PPC, social media, and content marketing. Our strategies enhance your online presence and effectively drive business growth.",
-    buttonText: "Let’s Strategize",
-    backgroundImage: bgImage,
-  },
-  {
-    title: "Web Development",
-    description:
-      "Our team builds responsive and modern websites using the latest technologies. We ensure your site is fast, secure, and optimized for all devices.",
-    buttonText: "Get Started",
-    backgroundImage: bgImage,
-  },
-  {
-    title: "SEO Optimization",
-    description:
-      "Boost your search engine rankings with our proven SEO strategies. We focus on keyword research, on-page optimization, and link building.",
-    buttonText: "Learn More",
-    backgroundImage: bgImage,
-  },
-];
+import "../../styles/home/WhyChooseUs.css";
+import bgImage1 from "../../assets/home/WhyChooseUsABBg.webp";
+import bgImage2 from "../../assets/home/WhyChooseUsABBg.webp";
 
 const WhyChooseUs = () => {
   return (
-    <div className="slider-container">
+    <div className="wcusab-slider">
       <Swiper
-        modules={[Autoplay, Pagination, EffectFade]}
-        effect="fade"
-        loop={true}
-        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        modules={[Pagination]}
         pagination={{ clickable: true }}
-        className="why-swiper"
+        loop={true}
+        speed={800}
+        grabCursor={true}
+        className="wcusab-swiper"
       >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="slide-background"
-              style={{ backgroundImage: `url(${slide.backgroundImage})` }}
-            >
-              <div className="text-section">
-                <h1>{slide.title}</h1>
-                <p>{slide.description}</p>
-                <button>{slide.buttonText}</button>
+        {/* Slide 1 */}
+        <SwiperSlide>
+          <div
+            className="wcusab-slide d-flex align-items-center"
+            style={{ backgroundImage: `url(${bgImage1})` }}
+          >
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-lg-6 col-md-8 col-12">
+                  <div className="wcusab-content">
+                    <h1>
+                      See How We Can Help Your{" "}
+                      <span className="wcusab-highlight">Business Grow</span>.
+                    </h1>
+                    <p>
+                      We drive growth and expand reach with personalized,
+                      data-driven solutions.
+                    </p>
+                    <button className="wcusab-btn">Start Your Journey</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </SwiperSlide>
-        ))}
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 2 */}
+        <SwiperSlide>
+          <div
+            className="wcusab-slide d-flex align-items-center"
+            style={{ backgroundImage: `url(${bgImage2})` }}
+          >
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-lg-6 col-md-8 col-12">
+                  <div className="wcusab-content">
+                    <h1>
+                      Unlock Your{" "}
+                      <span className="wcusab-highlight">Full Potential</span>.
+                    </h1>
+                    <p>
+                      We craft strategies that boost engagement and ensure
+                      long-term digital success.
+                    </p>
+                    <button className="wcusab-btn">Get Started</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 3 */}
+        <SwiperSlide>
+          <div
+            className="wcusab-slide d-flex align-items-center"
+            style={{ backgroundImage: `url(${bgImage2})` }}
+          >
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-lg-6 col-md-8 col-12">
+                  <div className="wcusab-content">
+                    <h1>
+                      Empowering Your{" "}
+                      <span className="wcusab-highlight">Business</span>.
+                    </h1>
+                    <p>
+                      From AI to Blockchain, we deliver future-ready solutions
+                      that drive innovation and keep your business ahead.
+                    </p>
+                    <button className="wcusab-btn">Explore More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

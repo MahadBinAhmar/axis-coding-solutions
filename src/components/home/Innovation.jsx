@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/home/Innovation.css";
 import teamImage from "../../assets/home/innovation.webp";
 
@@ -48,8 +49,7 @@ const Innovation = () => {
               </div>
             </div>
             <hr />
-
-            <button className="discover-btn">Discover More</button>
+            <a href="/about" className="discover-btn">Discover More</a>
           </div>
         </div>
       </div>
