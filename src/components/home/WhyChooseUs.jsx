@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -37,7 +38,7 @@ const WhyChooseUs = () => {
                       We drive growth and expand reach with personalized,
                       data-driven solutions.
                     </p>
-                    <button className="wcusab-btn">Start Your Journey</button>
+                    <a href="/contact" className="wcusab-btn">Start Your Journey</a>
                   </div>
                 </div>
               </div>
@@ -63,7 +64,7 @@ const WhyChooseUs = () => {
                       We craft strategies that boost engagement and ensure
                       long-term digital success.
                     </p>
-                    <button className="wcusab-btn">Get Started</button>
+                    <a href="/contact" className="wcusab-btn">Get Started</a>
                   </div>
                 </div>
               </div>
@@ -89,7 +90,7 @@ const WhyChooseUs = () => {
                       From AI to Blockchain, we deliver future-ready solutions
                       that drive innovation and keep your business ahead.
                     </p>
-                    <button className="wcusab-btn">Explore More</button>
+                    <a href="/about" className="wcusab-btn">Explore More</a>
                   </div>
                 </div>
               </div>

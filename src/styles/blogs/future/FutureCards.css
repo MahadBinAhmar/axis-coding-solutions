@@ -1,9 +1,9 @@
-.cards-section {
+.futurecards-section {
   background-color: #151515;
   padding: 50px 0;
 }
 
-.custom-card {
+.futurecard {
   border-radius: 15px;
   overflow: hidden;
   background: #111;
@@ -14,15 +14,15 @@
   transition: transform 0.3s ease;
 }
 
-.custom-card .card-img img {
+.futurecard .futurecard-img img {
   width: 100%;
-  height: 280px; 
+  height: 280px;
   object-fit: fill;
   display: block;
   border-radius: 15px 15px 0 0;
 }
 
-.card-text {
+.futurecard-text {
   background: #1e1e1e;
   color: #fff;
   padding: 20px;
@@ -30,7 +30,7 @@
   border-radius: 0 0 15px 15px;
   font-size: 22px;
   font-weight: 600;
-  min-height: 180px;  
+  min-height: 180px;
   position: relative;
   transition: transform 0.6s ease;
   display: flex;
@@ -38,11 +38,11 @@
   justify-content: flex-end;
 }
 
-.custom-card:hover .card-text {
+.futurecard:hover .futurecard-text {
   transform: translateY(-20px);
 }
 
-.learn-more-btn {
+.future-learn-btn {
   background: #fa812f;
   text-decoration: none;
   color: #fff;
@@ -59,12 +59,12 @@
   transition: all 0.3s ease;
 }
 
-.custom-card:hover .learn-more-btn {
+.futurecard:hover .future-learn-btn {
   opacity: 1;
   transform: translateY(0);
 }
 
-.learn-more-btn:hover {
+.future-learn-btn:hover {
   background: linear-gradient(90deg, #fab411, #fa812f) !important;
   color: #fff;
 }

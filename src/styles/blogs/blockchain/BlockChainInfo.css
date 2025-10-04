@@ -1,0 +1,43 @@
+.blockchaininfo-section {
+  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px 15px;
+}
+
+.blockchaininfo-card {
+  background: transparent;
+}
+
+.blockchaininfo-image {
+  width: 80%;
+  height: 440px;
+  align-self: center;
+  object-fit: fill;
+}
+
+.blockchaininfo-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .blockchaininfo-image {
+    height: 320px;
+  }
+  .blockchaininfo-content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blockchaininfo-image {
+    height: 220px;
+  }
+  .blockchaininfo-content {
+    font-size: 14px;
+  }
+}

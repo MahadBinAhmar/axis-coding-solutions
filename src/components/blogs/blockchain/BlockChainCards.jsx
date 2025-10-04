@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/blogs/Cards.css";
-import img1 from "../../assets/blogs/1.webp";
-import img2 from "../../assets/blogs/2.webp";
-import img3 from "../../assets/blogs/3.webp";
+import "../../../styles/blogs/blockchain/BlockChainCards.css";
+import img1 from "../../../assets/blogs/1.webp";
+import img2 from "../../../assets/blogs/3.webp";
 
-const Cards = () => {
+const BlockCards = () => {
   const data = [
     {
       id: 1,
@@ -16,31 +15,24 @@ const Cards = () => {
     {
       id: 2,
       img: img2,
-      title: "Growth of The Blockchain Technology in Market",
-      link: "/block",
-    },
-    {
-      id: 3,
-      img: img3,
       title: "Role Of Technology In Future And Its Impact",
       link: "/future",
     },
   ];
 
   return (
-    <div className="cards-section py-5">
+    <div className="blockcards-section py-5">
       <div className="container">
-        <div className="row g-4">
+        <div className="row g-4 justify-content-start">
           {data.map((card) => (
             <div key={card.id} className="col-md-4">
-              <div className="custom-card">
-                <div className="card-img">
+              <div className="blockcard">
+                <div className="blockcard-img">
                   <img src={card.img} alt={card.title} />
                 </div>
-                <div className="card-text">
+                <div className="blockcard-text">
                   <p>{card.title}</p>
-                  {/* ✅ Each button has its own route */}
-                  <Link to={card.link} className="learn-more-btn">
+                  <Link to={card.link} className="block-learn-btn">
                     Learn More
                   </Link>
                 </div>
@@ -53,4 +45,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default BlockCards;

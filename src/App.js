@@ -16,9 +16,18 @@ import ScrollingImagesUs from "./components/aboutus/ScrollingImages";
 import WhyChooseUsAB from "./components/aboutus/WhyChooseUsAB";
 import Contact from "./components/contactus/Contact";
 import MapSection from "./components/contactus/MapSection";
-import ContctUs from "./components/contactus/ContactUs";
+import ContactUs from "./components/contactus/ContactUs";
 import BlogUs from "./components/blogs/BlogUs";
 import Cards from "./components/blogs/Cards";
+import AiInfo from "./components/blogs/ai/AiInfo";
+import AiUs from "./components/blogs/ai/AiUs";
+import AiCards from "./components/blogs/ai/AiCards";
+import FutureInfo from "./components/blogs/future/FutureInfo";
+import FutureUs from "./components/blogs/future/FutureUs";
+import FutureCards from "./components/blogs/future/FutureCards";
+import BlockInfo from "./components/blogs/blockchain/BlockChainInfo";
+import BlockUs from "./components/blogs/blockchain/BlockChainUs";
+import BlockCards from "./components/blogs/blockchain/BlockChainCards";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -72,7 +81,7 @@ function App() {
             <Route path="/contact" 
             element={
             <>
-               <ContctUs />
+               <ContactUs />
                <Contact/>
                <MapSection/>
             </>
@@ -87,6 +96,36 @@ function App() {
           
             </>
            } 
+          />
+
+          <Route path="/ai"
+            element={
+              <>
+              <AiUs/>
+              <AiInfo/>
+              <AiCards/>
+              </>
+            }
+          />
+
+          <Route path="/block"
+            element={
+              <>
+              <BlockUs/>
+              <BlockInfo/>
+              <BlockCards/>
+              </>
+            }
+          />
+
+          <Route path="/future"
+            element={
+              <>
+              <FutureUs/>
+              <FutureInfo/>
+              <FutureCards/>
+              </>
+            }
           />
 
           <Route path="/ourproject" 

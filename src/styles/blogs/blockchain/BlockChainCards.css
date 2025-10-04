@@ -1,28 +1,28 @@
-.cards-section {
+.blockcards-section {
   background-color: #151515;
   padding: 50px 0;
 }
 
-.custom-card {
+.blockcard {
   border-radius: 15px;
   overflow: hidden;
   background: #111;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   height: 100%;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
 }
 
-.custom-card .card-img img {
+.blockcard-img img {
   width: 100%;
-  height: 280px; 
+  height: 280px;
   object-fit: fill;
   display: block;
   border-radius: 15px 15px 0 0;
 }
 
-.card-text {
+.blockcard-text {
   background: #1e1e1e;
   color: #fff;
   padding: 20px;
@@ -30,7 +30,7 @@
   border-radius: 0 0 15px 15px;
   font-size: 22px;
   font-weight: 600;
-  min-height: 180px;  
+  min-height: 180px;
   position: relative;
   transition: transform 0.6s ease;
   display: flex;
@@ -38,11 +38,11 @@
   justify-content: flex-end;
 }
 
-.custom-card:hover .card-text {
+.blockcard:hover .blockcard-text {
   transform: translateY(-20px);
 }
 
-.learn-more-btn {
+.block-learn-btn {
   background: #fa812f;
   text-decoration: none;
   color: #fff;
@@ -59,12 +59,17 @@
   transition: all 0.3s ease;
 }
 
-.custom-card:hover .learn-more-btn {
+.blockcard:hover .block-learn-btn {
   opacity: 1;
   transform: translateY(0);
 }
 
-.learn-more-btn:hover {
+.block-learn-btn:hover {
   background: linear-gradient(90deg, #fab411, #fa812f) !important;
   color: #fff;
+}
+
+/* ✅ Cards left side se align hon */
+.blockcards-section .row {
+  justify-content: flex-start !important;
 }

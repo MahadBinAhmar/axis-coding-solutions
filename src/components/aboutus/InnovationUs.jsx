@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/aboutus/InnovationUs.css";
 import teamImage from "../../assets/home/innovation.webp";
 
@@ -61,7 +62,7 @@ const InnovationUs = () => {
             </div>
             <hr />
 
-            <button className="innovation-us-btn">Discover More</button>
+            <a href="/about" className="innovation-us-btn">Discover More</a>
           </div>
         </div>
       </div>

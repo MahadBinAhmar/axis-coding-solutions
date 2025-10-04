@@ -1,0 +1,49 @@
+.aiinfo-section {
+  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px 15px;
+}
+
+.aiinfo-card {
+  background: transparent;
+}
+
+.aiinfo-image {
+  width: 80%;
+  height: 440px;
+  align-self: center;
+  object-fit:fill;
+}
+
+.aiinfo-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .aiinfo-image {
+    height: 320px;
+  }
+  .aiinfo-title {
+    font-size: 26px;
+  }
+  .aiinfo-content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aiinfo-image {
+    height: 220px;
+  }
+  .aiinfo-title {
+    font-size: 22px;
+  }
+  .aiinfo-content {
+    font-size: 14px;
+  }
+}
