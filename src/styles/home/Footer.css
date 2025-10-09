@@ -72,8 +72,10 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 0.4s ease;
 }
 
 .bottom-link:hover {
-  text-decoration: underline;
+  color:#e16a15;
+  text-decoration: none;
 }

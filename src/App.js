@@ -29,6 +29,7 @@ import BlockInfo from "./components/blogs/blockchain/BlockChainInfo";
 import BlockUs from "./components/blogs/blockchain/BlockChainUs";
 import BlockCards from "./components/blogs/blockchain/BlockChainCards";
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -36,7 +37,7 @@ function App() {
     // 5 seconds ke liye preloader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -126,14 +127,6 @@ function App() {
               <FutureCards/>
               </>
             }
-          />
-
-          <Route path="/ourproject" 
-            element={
-            <>
-            
-            </>
-           } 
           />
 
           <Route path="/service" 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/home/Hero.css";
-import bg from "../../assets/home/bg.mp4";
+import bg from "../../assets/home/bg.webm";
 
 const Hero = () => {
   return (

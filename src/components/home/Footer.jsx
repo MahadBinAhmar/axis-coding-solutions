@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/home/Footer.css';
-import instagramLogo from "../../assets/home/insta.webp"; 
+import FacebookLogo from "../../assets/home/facebook.webp"; 
 import linkedinLogo from "../../assets/home/linkedin.webp"; 
 
 const Footer = () => {
@@ -17,10 +17,10 @@ const Footer = () => {
               experts.
             </p>
             <div className="social-icons">
-              <a href="#" className="icon-link">
-                <img src={instagramLogo} alt="Instagram" className="social-img" />
+              <a href="https://www.facebook.com/share/1BntrBxTTa/" className="icon-link">
+                <img src={FacebookLogo} alt="Instagram" className="social-img" />
               </a>
-              <a href="#" className="icon-link">
+              <a href="https://www.linkedin.com/company/cycsol/" className="icon-link">
                 <img src={linkedinLogo} alt="LinkedIn" className="social-img" />
               </a>
             </div>

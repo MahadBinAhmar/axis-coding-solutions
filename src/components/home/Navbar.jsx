@@ -14,108 +14,73 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Blur Transparent Navbar */}
+      {/* ✅ Transparent Glass Navbar */}
       <nav className="navbar navbar-expand-lg glass-navbar fixed-top">
         <div className="container d-flex align-items-center justify-content-between">
-          {/* Logo on left */}
+          {/* Logo */}
           <Link className="navbar-brand logo-hover" to="/">
             <img src={logo} alt="Logo" height="70" />
           </Link>
 
           {/* Hamburger Icon */}
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 custom-toggler"
             type="button"
             onClick={toggleMenu}
           >
-            <span className="navbar-toggler-icon"></span>
+            <i className="bi bi-list" style={{ color: "#FF7E30", fontSize: "32px" }}></i>
           </button>
 
-          {/* nav-links + button on right */}
+          {/* Nav Links (Desktop View) */}
           <div
-            className={`collapse navbar-collapse ${
-              menuOpen ? "show" : ""
-            } justify-content-end`}
+            className={`collapse navbar-collapse ${menuOpen ? "show" : ""} justify-content-end`}
             id="navbarNav"
           >
             <ul className="navbar-nav align-items-center me-2">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About Us
-                </Link>
+                <Link className="nav-link" to="/about">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/service">
-                  Services
-                </Link>
+                <Link className="nav-link" to="/service">Services</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/ourproject">
-                  Our Projects
-                </Link>
+                <Link className="nav-link" to="/ourproject">Our Projects</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">
-                  Blog
-                </Link>
+                <Link className="nav-link" to="/blog">Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact Us
-                </Link>
+                <Link className="nav-link" to="/contact">Contact Us</Link>
               </li>
             </ul>
-
-            <a className="btn get-started-btn" href="/contact">
-              Get Started
-            </a>
+            <a className="btn get-started-btn" href="/contact">Get Started</a>
           </div>
         </div>
       </nav>
 
-      {/* Fullscreen Overlay for Mobile */}
+      {/* ✅ Single Fullscreen Overlay (Mobile) */}
       <div className={`overlay ${menuOpen ? "overlay-open" : ""}`}>
         <button className="btn-close-overlay" onClick={toggleMenu}>
           &times;
         </button>
         <div className="overlay-content">
-          {/* Left Side */}
           <div className="overlay-left">
             <img src={logo} alt="Logo" className="overlay-logo" />
-            <p>
-              Design Direction02 <br />
-              Design Street <br />
-              London
-            </p>
-            <a href="mailto:hello@designdirection.com">cycsol@gmail.com</a>
           </div>
 
-          {/* Right Side - Same Links */}
           <div className="overlay-right">
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-            <Link className="nav-link" to="/about">
-              About Us
-            </Link>
-            <Link className="nav-link" to="/service">
-              Services
-            </Link>
-            <Link className="nav-link" to="/ourproject">
-              Our Projects
-            </Link>
-            <Link className="nav-link" to="/blog">
-              Blogs
-            </Link>{" "}
-            <Link className="nav-link" to="/contact">
-              Contact Us
-            </Link>{" "}
+            <Link className="nav-link" to="/" onClick={toggleMenu}>Home</Link>
+            <Link className="nav-link" to="/about" onClick={toggleMenu}>About Us</Link>
+            <Link className="nav-link" to="/service" onClick={toggleMenu}>Services</Link>
+            <Link className="nav-link" to="/ourproject" onClick={toggleMenu}>Our Projects</Link>
+            <Link className="nav-link" to="/blog" onClick={toggleMenu}>Blogs</Link>
+            <Link className="nav-link" to="/contact" onClick={toggleMenu}>Contact Us</Link>
           </div>
+
+          <a className="btn get-started-btn" href="/contact">Get Started</a>
         </div>
       </div>
     </>
